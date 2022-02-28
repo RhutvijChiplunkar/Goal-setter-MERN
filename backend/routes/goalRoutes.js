@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const {getGoals, setGoal, updateGoal, deleteGoal}=require('../controllers/goalControllers')
+const {getGoals, setGoal, updateGoal, deleteGoal}=require('../controllers/goalController')
 
 //routes for /api/goals
 router.get('/',getGoals)
