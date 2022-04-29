@@ -62,7 +62,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
     const goal=await Goal.findById(req.params.id)
     if(!goal){
         res.status(400)
-        throw new Error('Goal not found')
+        throw new Error('The given goal not found')
     }
  
     //check for user
